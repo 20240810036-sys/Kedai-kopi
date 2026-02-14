@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard | Fadhi Coffee</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- ===== SIDEBAR ===== -->
+        <div class="col-md-2 sidebar p-3">
+          <h4 class="text-center mb-4">Admin</h4>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a class="nav-link active" href="#">Dashboard</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a class="nav-link" href="#menu">Kelola Menu</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a class="nav-link" href="#pesanan">Pesanan</a>
+            </li>
+            <li class="nav-item mt-4">
+              <a class="btn btn-danger w-100" href="index.html">Logout</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- ===== CONTENT ===== -->
+        <div class="col-md-10 p-4">
+          <h2>Dashboard Admin</h2>
+          <p>Selamat datang, Admin Fadhi Coffee ☕</p>
+
+          <!-- ===== INFO CARD ===== -->
+          <div class="row mb-4">
+            <div class="col-md-4">
+              <div class="card p-3 text-center shadow-sm">
+                <h5>Total Menu</h5>
+                <h3>8</h3>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card p-3 text-center shadow-sm">
+                <h5>Total Pesanan</h5>
+                <h3>15</h3>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card p-3 text-center shadow-sm">
+                <h5>Pelanggan</h5>
+                <h3>6</h3>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===== KELOLA MENU ===== -->
+          <h4 id="menu">Kelola Menu</h4>
+          <table class="table table-bordered table-striped">
+            <thead class="table-dark">
+              <tr>
+                <th>No</th>
+                <th>Nama Menu</th>
+                <th>Harga</th>
+                <th>Aksi</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Es Kopi Susu</td>
+                <td>Rp 15.000</td>
+                <td>
+                  <button class="btn btn-sm btn-warning">Edit</button>
+                  <button class="btn btn-sm btn-danger">Hapus</button>
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Ayam Geprek</td>
+                <td>Rp 18.000</td>
+                <td>
+                  <button class="btn btn-sm btn-warning">Edit</button>
+                  <button class="btn btn-sm btn-danger">Hapus</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <!-- ===== PESANAN ===== -->
+          <h4 id="pesanan" class="mt-5">Data Pesanan</h4>
+          <table class="table table-bordered table-striped">
+            <thead class="table-dark">
+              <tr>
+                <th>No</th>
+                <th>Nama Pelanggan</th>
+                <th>Menu</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Andi</td>
+                <td>Es Kopi Susu</td>
+                <td><span class="badge bg-warning">Diproses</span></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Sinta</td>
+                <td>Ayam Geprek</td>
+                <td><span class="badge bg-success">Selesai</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JS -->
+    <script src="js/admin.js"></script>
+  </body>
+</html>
